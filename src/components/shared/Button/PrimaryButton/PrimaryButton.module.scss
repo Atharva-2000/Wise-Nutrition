@@ -1,0 +1,9 @@
+@import '../../../../styles/components';
+@import '../../../../styles/colors';
+
+.primary_button{
+    @include button;
+    background-color: $primary-color;
+    color: $white;
+    font-weight: bold;
+}

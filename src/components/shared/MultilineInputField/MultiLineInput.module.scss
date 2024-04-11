@@ -1,0 +1,31 @@
+@import '../../../styles/colors';
+
+.multlineinput{
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+
+    label{
+        color: #45475A;
+        font-size: 17px;
+    }
+
+    textarea{
+        width:inherit;
+        min-height: 80px;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid $input-field-border-color;
+        color: $input-field-text;
+        padding: 6px;
+        font-size: 16px;
+        border-radius: 4px;
+
+        ::placeholder{
+            color: $input-field-placeholder;
+        }
+    }
+
+}

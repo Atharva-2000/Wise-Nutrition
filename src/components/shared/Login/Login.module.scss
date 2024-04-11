@@ -1,0 +1,66 @@
+@import '../../../styles/colors';
+
+.login_form{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0 , 0.25) ;
+    border: 1.5px solid #ABAEBE;
+    padding: 20px;
+    background-color: $white;
+    border-radius: 10px;
+    // width: 350px;
+    width: 25%;
+    
+
+    .title{
+        font-size:x-large;
+        font-weight: bold;
+    }
+
+    .inputfield_wrapper_container{
+        width: 80%;
+        margin-top: 1rem;
+    }
+
+    .inputfield_wrapper_container:first-child{
+        margin-top: 0.5rem;
+    }
+
+    .forgot_password_link_container{
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .forgot_password_link{
+        color: #0CA3B2;
+        font-size: medium;
+        cursor: pointer;
+    }
+
+    .singup_link_container{
+        display: flex;
+        gap: 12px;
+        margin-top: 1.5rem;
+    }
+
+    .singup_link{
+        color: #0B8D9B;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .login_form{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .login_form{
+        width: 75%;
+    }
+}

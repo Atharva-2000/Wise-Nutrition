@@ -1,0 +1,58 @@
+@import '../../../styles/colors';
+
+.sign_up_form{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0 , 0.25) ;
+    border: 1.5px solid #ABAEBE;
+    padding: 20px;
+    background-color: $white;
+    border-radius: 10px;
+    // width: 350px;
+    width: 25%;
+    max-height: 90vh;
+    overflow-y: auto;
+    
+
+    .title{
+        font-size:x-large;
+        font-weight: bold;
+    }
+
+    .inputfield_wrapper_container{
+        width: 80%;
+        margin-top: 1rem;
+    }
+
+    .inputfield_wrapper_container:first-child{
+        margin-top: 0.5rem;
+    }
+
+    .login_link_container{
+        display: flex;
+        gap: 12px;
+        margin-top: 0.75rem;
+    }
+
+    .login_link{
+        color: #0B8D9B;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .sign_up_form{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sign_up_form{
+        width: 75%;
+    }
+}
+
+

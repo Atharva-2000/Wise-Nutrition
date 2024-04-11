@@ -45,17 +45,20 @@ const Login = ({user, changePage}) => {
         <div style={{marginTop: '1.75rem'}}>
               <PrimaryButton title={LOG_IN} onClick={()=>{sumbmitdata()}}/>
         </div>
-        <div className={`${styles.singup_link_container}`}>
-            <p>Do not have an account?</p>
-            <p 
-               className={`${styles.singup_link}`} 
-               onClick={()=>{
-                 changePage('sign-up')
-                 setUserDetails(empty_user_details_obj)
-               }}>
-               {SIGN_UP}
-            </p>
-        </div>
+        {
+            user!=='admin' && 
+             <div className={`${styles.singup_link_container}`}>
+                <p>Do not have an account?</p>
+                <p 
+                className={`${styles.singup_link}`} 
+                onClick={()=>{
+                    changePage('sign-up')
+                    setUserDetails(empty_user_details_obj)
+                }}>
+                {SIGN_UP}
+                </p>
+             </div>
+        }
     </div>
   )
 }

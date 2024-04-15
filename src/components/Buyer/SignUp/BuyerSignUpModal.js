@@ -20,7 +20,7 @@ const BuyerSignUpModal = ({isVisible, handleSignUpModalVisiblity}) => {
 
     const {LOG_IN, SIGN_UP, FORM_LABELS, PLACEHOLDERS} = labels
 
-    const empty_user_details_obj = {firstname: '', lastname: '', email: '', phone: '', city: cities[0], region: regions['Pune'][0], address: '', capacity: '', password: '', confirm_password: ''}
+    const empty_user_details_obj = {firstname: '', lastname: '', email: '', phone: '', city: cities[0], region: regions['Pune'][0], address: '', password: '', confirm_password: ''}
 
     const [userDetails , setUserDetails] = useState(empty_user_details_obj)
 

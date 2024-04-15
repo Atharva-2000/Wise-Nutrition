@@ -39,3 +39,16 @@
     font-size: 1rem;
     cursor: pointer;
 }
+
+@mixin modalHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    align-items: center;
+    margin: 0;
+}
+
+@mixin modalTitle{
+    font-size: 20px;
+    font-weight: bold;
+}

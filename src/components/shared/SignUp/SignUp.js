@@ -61,7 +61,7 @@ const SignUp = ({user, changePage}) => {
              <InputField type={'password'} label={FORM_LABELS.CONFIRM_PASSWORD} name={"confirm_password"} placeholder={PLACEHOLDERS.CONFIRM_PASSWORD} value={userDetails.confirm_password} onChange={handleInputChange}/>
         </div>
         <div style={{marginTop: '2rem'}}>
-              <PrimaryButton title={LOG_IN} onClick={()=>{sumbmitdata()}}/>
+              <PrimaryButton title={SIGN_UP} onClick={()=>{sumbmitdata()}}/>
         </div>
         <div className={`${styles.login_link_container}`}>
             <p>Do not have an account?</p>

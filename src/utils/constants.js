@@ -36,3 +36,4 @@ export const cities = ['Pune','Mumbai']
 export const regions = {
     Pune : ['Aundh-Baner', 'Kothrud-Bavdhan']
 }
+

@@ -1,0 +1,24 @@
+@import '../../../styles/components';
+
+.title{
+    @include modalTitle
+}
+
+.modal_header{
+   @include modalHeader
+}
+
+.modal_body{
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.forgot_password_link{
+    color: #0CA3B2;
+    font-size: medium;
+    cursor: pointer;
+}
+

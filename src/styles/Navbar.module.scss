@@ -1,0 +1,51 @@
+@import './colors';
+@import './components';
+
+.topNavigation{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 24px 14px 24px;
+    background-color: $white;
+    box-shadow: 0 1px 15px 0 rgba(0,0,0,0.15);
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 100px;
+    height: 50px;
+    background-color: #C8C8C8;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_container{
+    display: flex;
+    gap: 50px;
+    padding: 10px 10px;
+}
+
+.menu_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 6px;
+}
+
+.active_menu_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 6px 4px 6px;
+    border-bottom: 3px solid $primary-color;
+}
+
+.menu_item_link{
+    color: black;
+    font-weight:600;
+    font-size: 20px;
+    text-decoration: none;
+}

@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import BuyerLoginModal from '../../Login/BuyerLoginModal'
 import BuyerSignUpModal from '../../SignUp/BuyerSignUpModal'
+import Logo from '@/components/shared/Logo/Logo'
 
 const NonLoginedBuyerNavbar = () => {
 
@@ -26,7 +27,7 @@ const NonLoginedBuyerNavbar = () => {
 
   return (
     <div className={styles.topNavigation}>
-        <div className={styles.logo}>Logo</div>
+        <Logo/>
         <div className={styles.menu_container}>
             <div className={pathname==='/buyer' ? styles.active_menu_item : styles.menu_item}>
                 <Link href={"/buyer"} className={styles.menu_item_link}>Home</Link>

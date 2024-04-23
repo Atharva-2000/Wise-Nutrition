@@ -37,3 +37,5 @@ export const regions = {
     Pune : ['Aundh-Baner', 'Kothrud-Bavdhan']
 }
 
+export const token = "hj657vjhhkj9"
+

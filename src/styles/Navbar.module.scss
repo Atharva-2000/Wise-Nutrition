@@ -10,16 +10,9 @@
     background-color: $white;
     box-shadow: 0 1px 15px 0 rgba(0,0,0,0.15);
     box-sizing: border-box;
-}
-
-.logo{
-    width: 100px;
-    height: 50px;
-    background-color: #C8C8C8;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .menu_container{
@@ -33,6 +26,7 @@
     justify-content: center;
     align-items: center;
     padding: 6px 6px;
+    cursor: pointer;
 }
 
 .active_menu_item{
@@ -48,4 +42,32 @@
     font-weight:600;
     font-size: 20px;
     text-decoration: none;
+}
+
+.dropdown{
+    padding: 10px;
+}
+
+.dropdown_item{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+}
+
+.dropdown_item_link{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 768px){
+    .topNavigation{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu_container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
 }

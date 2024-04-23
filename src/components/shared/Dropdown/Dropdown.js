@@ -3,11 +3,11 @@
 import React from 'react'
 import styles from './Dropdown.module.scss'
 
-const Dropdown = ({list, name, value, label, onChange}) => {
+const Dropdown = ({list, name, value, label, onChange, disabled=false}) => {
   return (
     <div className={`${styles.dropdown}`}>
            <label>{label}</label>
-           <select name={name} value={value} onChange={(e)=>{onChange(name, e.target.value )}}>
+           <select name={name} value={value} onChange={(e)=>{onChange(name, e.target.value )}} disabled={disabled}>
                {
                   list ? ( list.map((item, index)=>{
                         return (

@@ -1,3 +1,5 @@
+@import '../../../styles/components';
+
 .profile_page{
     display: flex;
     flex-direction: column;
@@ -6,9 +8,7 @@
 }
 
 .title{
-    margin-top: 3rem;
-    font-size: x-large;
-    font-weight: 600;
+    @include heading
 }
 
 .form_container{

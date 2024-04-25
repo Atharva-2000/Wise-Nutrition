@@ -59,3 +59,14 @@
     margin-top: 3rem;
 }
 
+@mixin details_link{
+    font-weight: 600;
+    color: $details-link-color;
+    cursor: pointer;
+}
+
+@mixin id_field{
+    font-weight: 600;
+    color: $primary-color;
+}
+

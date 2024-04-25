@@ -1,0 +1,48 @@
+@import '../../../styles/components';
+@import '../../../styles/colors';
+
+.payment_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.title{
+    @include heading;
+}
+
+.payment_id{
+    @include id_field; 
+}
+
+.view_details_link{
+    @include details_link;
+}
+
+.paid{
+    color: $text-success;
+}
+
+.not_paid{
+    color: $text-danger;
+}
+
+.amount_field{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.modal_header{
+    @include modalHeader;
+}
+
+.modal_title{
+    margin-top: 1.4rem;
+    @include modalTitle;
+}
+
+.modal_body{
+    padding: 20px;
+}

@@ -9,10 +9,10 @@ const page = () => {
 
   return (
     <div className={styles.home_page}>
-           <p className={styles.title}>{current_hour>=18 ? "Tommorow's" : "Today's"} Orders</p>
-           {
-               current_hour>=18 ? (<TommorowOrderTable/>) : (<TodaysOrderTable/>)
-           }
+        <p className={styles.title}>{current_hour>=18 ? "Tommorow's" : "Today's"} Orders</p>
+        {
+            current_hour>=18 ? (<TommorowOrderTable/>) : (<TodaysOrderTable/>)
+        }
     </div>
   )
 }

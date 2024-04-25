@@ -34,8 +34,8 @@ const SellerNavbar = () => {
             <div className={pathname==='/seller/home' ? styles.active_menu_item : styles.menu_item}>
                 <Link href={"/seller/home"} className={styles.menu_item_link}>Home</Link>
             </div>
-            <div className={pathname==='/seller/history' ? styles.active_menu_item : styles.menu_item}>
-                <Link href={"/seller/history"} className={styles.menu_item_link}>History</Link>
+            <div className={pathname==='/seller/pickups' ? styles.active_menu_item : styles.menu_item}>
+                <Link href={"/seller/pickups"} className={styles.menu_item_link}>Pickups</Link>
             </div>
             <div className={pathname==='/seller/payment' ? styles.active_menu_item : styles.menu_item}>
                 <Link href={"/seller/payment"} className={styles.menu_item_link}>Payments</Link>

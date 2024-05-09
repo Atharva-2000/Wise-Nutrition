@@ -71,11 +71,11 @@ const Profile = ({user, profileData, saveDetails}) => {
                     {
                         enableEditing ? (
                             <>
-                                 <PrimaryButton title={"Save Details"} onClick={()=>{saveDetails(updatedDetails)}}/>  
+                                 <PrimaryButton title={"Save"} onClick={()=>{saveDetails(updatedDetails)}}/>  
                                  <OulinedButton title={"Cancel"} onClick={()=>{setEnableEditing(false)}} />
                             </>
                         ):(
-                            <PrimaryButton title={"Edit Details"} onClick={()=>{setEnableEditing(true)}}/>
+                            <PrimaryButton title={"Edit"} onClick={()=>{setEnableEditing(true)}}/>
                         )
                     }
                 </div>

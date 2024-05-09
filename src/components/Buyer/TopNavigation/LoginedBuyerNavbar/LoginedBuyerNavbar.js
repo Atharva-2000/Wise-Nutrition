@@ -52,11 +52,11 @@ const LoginedBuyerNavbar = () => {
                     <Image alt='add to cart icon' src={addToCartIcon} height={30} width={30}/>
                 </Link>
             </div>
-            <div className={styles.menu_item}>
+            {/* <div className={styles.menu_item}>
                 <Link href={"/buyer/notification"}>
                     <Image alt='notification icon' src={notificationIcon} height={30} width={30}/>
                 </Link>
-            </div>
+            </div> */}
             <div className={styles.menu_item}>
                 <Image 
                     src={profileIcon} 

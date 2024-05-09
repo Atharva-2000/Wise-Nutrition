@@ -1,14 +1,14 @@
 "use client"
 
-import React, { useState } from 'react'
-import styles from './SellerPickups.module.scss'
+import React, {useState} from 'react'
 import tabStyles from '../../../styles/Tabs.module.scss'
-import PastPickupsTable from './PastPickupsTable'
-import TodaysPickupsTable from './TodaysPickupsTable'
+import styles from './BuyerDeliveries.module.scss'
+import PastDeliveriesTable from './PastDeliveriesTable'
+import TodaysDelivery from './TodaysDelivery'
 
 const page = () => {
 
-    const tabs = ["Today's Pickups", "Past Pickups"]
+    const tabs = ["Today’s Delivery", "Past Deliveries"]
 
     const [activeTab, setActiveTab] = useState(tabs[0])
 
@@ -17,7 +17,7 @@ const page = () => {
     }
 
   return (
-    <div className={styles.pickups_page}>
+    <div className={styles.deliveries_page}>
         <div className={tabStyles.tabContainer}>
             {
                 tabs.map((tab, index)=>(
@@ -27,12 +27,12 @@ const page = () => {
         </div>
         <div>
             <div className={activeTab===tabs[0] ? tabStyles.visible : tabStyles.not_visible}>
-                <TodaysPickupsTable/>
+                <TodaysDelivery/>
             </div>
             <div className={activeTab===tabs[1] ? tabStyles.visible : tabStyles.not_visible}>
-                <PastPickupsTable/>
+                <PastDeliveriesTable/>
             </div>
-        </div>
+        </div>      
     </div>
   )
 }

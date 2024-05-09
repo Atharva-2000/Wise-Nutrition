@@ -1,6 +1,6 @@
 @import '../../../styles/components';
 
-.pickups_page{
+.orders_page{
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
     margin-top: 3rem;
 }
 
-.pickup_id{
+.order_id{
     @include id_field; 
 }
 
@@ -17,10 +17,10 @@
     @include details_link;
 }
 
-.status_field{
+.price_field{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 3px;
 }
 
 .modal_header{

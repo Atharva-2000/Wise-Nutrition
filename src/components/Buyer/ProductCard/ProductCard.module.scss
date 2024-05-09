@@ -1,0 +1,35 @@
+@import '../../../styles/components';
+@import '../../../styles/colors';
+
+.product_card{
+    border-radius: 10px;
+    border: 1px solid #B9BED6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // gap: 1rem;
+    padding: 24px;
+    box-shadow: 0 0px 15px 0 rgba(0,0,0,0.15);
+}
+
+.product_name{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.product_price{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.view_details_button{
+    @include button;
+    background-color: $primary-color;
+    color: $white;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-weight: 600;
+}

@@ -1,6 +1,29 @@
+@import './colors';
+
 .tabContainer{
     display: flex;
     width: 100%;
     gap: 1rem;
-    border-bottom: 1px solid #DADADA;
+    border-bottom: 1.5px solid #DADADA;
+}
+
+.tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+.active{
+    border-bottom: 3.5px solid $primary-color;
+    padding-bottom: 0.5rem;
+}
+
+.visible{
+    display: block;
+}
+
+.not_visible{
+    display: none;
 }
